@@ -4,12 +4,13 @@ A Clojure library designed to produce numeric palindromes from the product of tw
 
 ## Usage
 
-Fire up a REPL and find out information about the largest palindrome which can be created
- by the product of two n-digit numbers by entering:
+-- Clone this project and cd into the euler4 directory
+-- fire up a REPL
+-- switch to namespace  euler4.core
+-- find out information about the largest palindrome which can be created from the product 
+   of two n-digit numbers by entering:
 
-(largest-palindrome n)
-
-where n is a digit between 1 and 7 -  be prepared to wait if you enter 7.
+(largest-palindrome n) where n is a digit between 1 and 7 -  be prepared to wait if you enter 7.
 
 ## License
 
