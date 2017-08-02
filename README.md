@@ -10,7 +10,7 @@ A Clojure library designed to produce numeric palindromes from the product of tw
 -- find out (largest-palindrome multiplier1 multiplier2) about the largest palindrome which can be created from the product 
    of two n-digit numbers by entering:
 
-(largest-palindrome n) where n is a digit between 1 and 7 -  be prepared to wait if you enter 7.
+(largest-palindrome n) where n is a digit between 2 and 7 -  be prepared to wait if you enter 7.
 
 (e.g: 
   (largest-palindrome 2)=> [9009 99 91]
