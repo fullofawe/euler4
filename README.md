@@ -12,10 +12,19 @@ A Clojure library designed to produce numeric palindromes from the product of tw
 
 (largest-palindrome n) where n is a digit between 1 and 7 -  be prepared to wait if you enter 7.
 
-(e.g:  ueler.core => (largest-palindrome 7)
-                  => [58666600666685 9999995 5866663])
-                  
-             
+(e.g: 
+  (largest-palindrome 2)
+  => [9009 99 91]                  
+  (largest-palindrome 3)
+  => [906609 993 913]
+  (largest-palindrome 4)
+  => [99000099 9999 9901]
+  (largest-palindrome 5)
+  => [9966006699 99979 99681]
+  (largest-palindrome 6)
+  => [999000000999 999999 999001]
+  (largest-palindrome 7)
+  => [94677111177649 9999979 9467731]           
 
 ## License
 
