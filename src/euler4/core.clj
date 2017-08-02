@@ -7,10 +7,10 @@
 
 
 (defn palindrome-sub-array
-  "returns an array of palindromes from a sub-range of "
-  [n iteration]
+  "returns an array of palindromes from the largest sub-range n digit multipliers "
+  [n]
   (let [high-end (int (Math/pow 10 n))
-        low-end (- (int (Math/pow 10 n)) (* iteration (int (Math/pow 10 (- n 1)))))
+        low-end (- (int (Math/pow 10 n)) (int (Math/pow 10 (- n 1))))
         rangevec (rseq (vec (to-array (range low-end  high-end))))]
     (for [x rangevec
           y rangevec
@@ -18,21 +18,11 @@
           :when (palindrome? z)]
       [z x y])))
 
-(defn large-palindrome
-  "returns a sorted list of arrays with information about the largest palindromes that are a product of two n digit numbers"
-  [n]
-  (reduce (fn [max-pal [x i]]
-            (palindrome-sub-array n i))
-          0
-          (for [ x (range 9) i (range 2)]
-            [x i])))
 
 (defn largest-palindrome
   "returns the first palindrome found which our algorithm claims will be the largest"
   [n]
   (if (and (> n 0) (<= n 7))
-    (first (large-palindrome n))
+    (first (palindrome-sub-array n))
     (println "Please enter a digit in (2 3 4 5 6 7)"))
   )
-
-
